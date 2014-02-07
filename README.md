@@ -4,7 +4,7 @@ Facebook PHP SDK for Laravel
 
 ## Installation
 
-* Add below line to `composer.json` file to your requires 
+* Add below line to `composer.json`
 
     	"abhimanyusharma003/laravel-facebook": "dev-master"
     
