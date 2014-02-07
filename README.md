@@ -5,22 +5,26 @@ Facebook PHP SDK for Laravel
 ## Installation
 
 * Add below line to `composer.json`
-
-    	"abhimanyusharma003/laravel-facebook": "dev-master"
+	```php
+    "abhimanyusharma003/laravel-facebook": "dev-master"
+	```
     
 * Run `composer update` or `composer install `
 
 * Open `app/config/app.php` and add the service provider to your `providers` array.
-
-    	'providers' => array(
-	 		'Abhimanyusharma003\LaravelFacebook\LaravelFacebookServiceProvider',
-    	)
+		
+	```php
+    'providers' => array(
+	 	'Abhimanyusharma003\LaravelFacebook\LaravelFacebookServiceProvider',
+    )
+	```
 
 * Now add the alias.
-
-    	'aliases' => array(
-        	'Facebook' =>   'Abhimanyusharma003\LaravelFacebook\LaravelFacebookFacade',
-    	)
+	```php
+    'aliases' => array(
+        'Facebook' =>   'Abhimanyusharma003\LaravelFacebook\LaravelFacebookFacade',
+    )
+	```
 
 
 ## Configuration
@@ -43,25 +47,29 @@ Setting details are.
 ## Examples
 
 * Get Login Url with your credentials and scope.
-
-    	Route::get('/', function(){
-    		return Facebook::loginUrl();
-    	});
+	```php
+    Route::get('/', function(){
+    	return Facebook::loginUrl();
+    });
+	```
 
 * Get User Id
-	
-    	Route::get('/', function(){
-    		return Facebook::getUser();
-    	});
+	```php
+    Route::get('/', function(){
+    	return Facebook::getUser();
+    });
+	```
 
 * Use facebook API
-
-    	Route::get('/', function(){
-    		$profile = Facebook::api('/me?fields=id,name,first_name,last_name,username,email,gender,birthday,hometown,location,picture.width(100)');
-    	});
+	```php
+    Route::get('/', function(){
+    	$profile = Facebook::api('/me?fields=id,name,first_name,last_name,username,email,gender,birthday,hometown,location,picture.width(100)');
+    });
+	```
     
 * Get Logout Url
-
-		Route::get('/', function(){
-    		return Facebook::logoutUrl();
-    	});`
+	```php
+     Route::get('/', function(){
+    	return Facebook::logoutUrl();
+    });
+	```
