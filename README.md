@@ -2,23 +2,25 @@
 
 Facebook PHP SDK for Laravel
 
-Add  `composer.json`.
+## Installation
 
-    "abhimanyusharma003/laravel-facebook": "dev-master"
+* Add below line to `composer.json` file to your requires 
+
+    	"abhimanyusharma003/laravel-facebook": "dev-master"
     
-Run `composer update` or `composer install `
+* Run `composer update` or `composer install `
 
-Open `app/config/app.php` and add the service provider to your `providers` array.
+* Open `app/config/app.php` and add the service provider to your `providers` array.
 
-    'providers' => array(
-        'Abhimanyusharma003\LaravelFacebook\LaravelFacebookServiceProvider',
-    )
+    	'providers' => array(
+	 		'Abhimanyusharma003\LaravelFacebook\LaravelFacebookServiceProvider',
+    	)
 
-Now add the alias.
+* Now add the alias.
 
-    'aliases' => array(
-        'Facebook' =>   'Abhimanyusharma003\LaravelFacebook\LaravelFacebookFacade',
-    )
+    	'aliases' => array(
+        	'Facebook' =>   'Abhimanyusharma003\LaravelFacebook\LaravelFacebookFacade',
+    	)
 
 
 ## Configuration
