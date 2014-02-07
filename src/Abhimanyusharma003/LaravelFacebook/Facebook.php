@@ -240,15 +240,15 @@ class Facebook extends BaseFacebook
     public function loginUrl()
     {
         $params = array(
-            'scope'        => Config::get('laravelfacebook::scope'),
-            'redirect_uri' => Config::get('laravelfacebook::redirect'),
+            'scope'        => Config::get('laravel-facebook::scope'),
+            'redirect_uri' => Config::get('laravel-facebook::redirect'),
         );
         return $this->getLoginUrl($params);
     }
 
     public function logoutUrl()
     {
-        $params = array('next' => Config::get('laravelfacebook::logout'));
+        $params = array('next' => Config::get('laravel-facebook::logout'));
         return $this->getLogoutUrl($params);
     }
 

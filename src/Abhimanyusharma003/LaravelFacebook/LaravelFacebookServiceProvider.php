@@ -14,7 +14,7 @@ class LaravelFacebookServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->package('abhimanyusharma003/laravelfacebook');
+        $this->package('abhimanyusharma003/laravel-facebook');
     }
 
     /**
@@ -25,7 +25,7 @@ class LaravelFacebookServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app['facebook'] = $this->app->share(function ($app) {
-            return new Facebook($app['config']->get('laravelfacebook::secret'));
+            return new Facebook($app['config']->get('laravel-facebook::secret'));
         });
     }
 
@@ -36,7 +36,7 @@ class LaravelFacebookServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('laravelfacebook');
+        return array('laravel-facebook');
     }
 
 }
