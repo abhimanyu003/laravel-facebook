@@ -1,6 +1,7 @@
 {
     "name": "abhimanyusharma003/laravel-facebook",
-    "description": "",
+    "description": "A laravel service provider for Facebook PHP SDK",
+    "keywords": ["laravel", "facebook", "sdk", "social", "api"],
     "authors": [
         {
             "name": "Abhimanyu Sharma",
